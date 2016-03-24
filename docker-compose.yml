@@ -1,0 +1,11 @@
+ssh:
+  image: adito/ssh-tunneling
+
+  ports:
+    - "2222:22"   # ssh
+  environment:
+    - SSH_USER= #SSH-User
+    - SSH_PASSWORD= #SSH-Password
+    - SSH_PERMITOPEN= #Hosts/Ports to connect (example: redmine:80 redmine:443 mysql:*)
+  volumes:
+    - /volume/ssh:/ssh
