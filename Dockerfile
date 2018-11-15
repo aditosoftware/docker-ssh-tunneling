@@ -2,8 +2,6 @@ FROM alpine
 
 RUN apk --no-cache add openssh
 
-VOLUME /ssh
-
 EXPOSE 22
 
 ADD start.sh /start.sh
