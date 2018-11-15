@@ -11,7 +11,7 @@ echo "HostKey /ssh/ssh_host_rsa_key" >> /etc/ssh/sshd_config
 echo "PermitOpen ${SSH_PERMITOPEN}" >> /etc/ssh/sshd_config
 echo "AllowUsers ${SSH_USER}" >> /etc/ssh/sshd_config
 
-chmod 400 /etc/ssh/*
+chmod 600 /etc/ssh/ssh_host_rsa_key
 chown root:root /etc/ssh/*
 
 adduser -D -H ${SSH_USER}
