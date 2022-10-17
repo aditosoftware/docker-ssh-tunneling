@@ -10,7 +10,7 @@ echo "ForceCommand echo this account can only be used for tunneling" > /etc/ssh/
 echo "HostKey /ssh/ssh_host_rsa_key" >> /etc/ssh/sshd_config
 echo "PermitOpen ${SSH_PERMITOPEN}" >> /etc/ssh/sshd_config
 echo "AllowUsers ${SSH_USER}" >> /etc/ssh/sshd_config
-if ![ -z "$SSH_PORT"]
+if ! [ -z "$SSH_PORT" ]
   then
     echo "Port ${SSH_PORT}" >> /etc/ssh/sshd_config
 fi
