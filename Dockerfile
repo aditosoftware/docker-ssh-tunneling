@@ -1,5 +1,7 @@
 FROM alpine:3.21
 
+COPY .build_date /etc/.build_date
+
 RUN apk --no-cache add openssh
 
 VOLUME /ssh
