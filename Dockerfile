@@ -1,4 +1,4 @@
-FROM alpine:3.21
+FROM alpine:3.22
 
 COPY .build_date /etc/.build_date
 
